@@ -1,0 +1,36 @@
+
+
+.mainContainer{
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.jumbotron{
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding:5px;
+
+}
+
+.display-4{
+    color: white;
+    padding: 0px;
+}
+/* .questionsSec{
+border: 1px solid;
+padding-bottom: 10px;
+
+} */
+#status{
+    color: white;
+}
+.questions {
+    margin-top: 10px;
+    font-weight: bold;
+}
+button{
+    border-radius: 8px;
+    background-color:red;
+    color: white;
+    
+
+
+}
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <title>Totally Trival Trivia Game</title>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mainContainer">
+        <div class="jumbotron mt-5">
+          <div class="display-4">ART TRIVIA</div>
+        </div>
+        <div id="status">
+          <h5>You have 30 seconds to answer the trivia questions</h5>
+        </div>
+      </div>
+      <!-- countdown timer -->
+      <div class="row questionsSec">
+        <div class="col-md-12">
+          <div class="lead questions">Jim Davis was the cartoonist behind Felix The Cat.</div>
+            <form>
+              <input type="radio" name="Question1" value="True"> True
+              <input type="radio" name="Question1" value="False"> False
+            </form>
+            <!-- If answer is True, then correct = -1. If Answer is False, then correct = +1 -->
+
+          <div class="lead questions">American Gothic, a 1930 portrait depicting a farmer and his daughter posing in front of their house, was painted
+            by Grant Wood</div>
+          <form>
+            <input type="radio" name="Question2" value="True"> True
+            <input type="radio" name="Question2" value="False"> False
+          </form>
+          <!-- If answer is True, then correct = +1. If Answer is False, then correct = -1 -->
+
+          <div class="lead questions">Calvin and Hobbes depicts a boy and a tiger sledding away</div>
+          <form>
+            <input type="radio" name="Question3" value="True"> True
+            <input type="radio" name="Question3" value="False"> False
+          </form>
+          <!-- If answer is True, then correct = +1. If Answer is False, then correct = -1 -->
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-12 p-0">
+        <button onclick="setTimeout(status, 3000);">Stop Timer</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Trivia Questions
+        Q: Jim Davis was the cartoonist behind which widely syndicated comic strip?
+        A:   Garfield
+      
+        Q: American Gothic, a 1930 portrait depicting a farmer and his daughter posing in front of their house, was painted by which artist?
+        A: Grant Wood
+
+        Q: What comic strip’s final panel depicts a boy and a tiger sledding away?
+        A: Calvin and Hobbes
+
+        Q: In what two-act ballet does a toymaker’s goddaughter travel to the Land of Sweets on Christmas Eve?
+        A: The Nutcracker
+
+        Q: The silkscreen paintings Campbell’s Soup Cans and Marilyn Diptych were created in 1962 by which American artist?
+        A: Andy Warhol
+
+        Q: Who painted a late 15th-century mural known as the Last Supper?
+        A: Leonardo da Vinci
+
+        Q: Which artist created the sculpture “The Thinker”?
+        A: Auguste Rodin
+        
+        -->
+  <!-- The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly. -->
+  <!-- Don't let the player pick more than one answer per question -->
+
+  <!-- reset the game -->
+
+
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

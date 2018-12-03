@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+  
 
   <div class="container">
     <div class="row">
@@ -23,10 +23,11 @@
           <div class="display-4">ART TRIVIA</div>
         </div>
         <div id="status">
-          <h5>You have 30 seconds to answer the trivia questions</h5>
+          <!-- <h5>You have 30 seconds to answer the trivia questions</h5> -->
         </div>
+        
       </div>
-      <!-- countdown timer -->
+      <!-- Questions -->
       <div class="row questionsSec">
         <div class="col-md-12">
           <div class="lead questions">Jim Davis was the cartoonist behind Felix The Cat.</div>
@@ -56,6 +57,7 @@
     <div class="row mt-3">
       <div class="col-md-12 p-0">
         <button onclick="setTimeout(status, 3000);">Stop Timer</button>
+      
       </div>
     </div>
   </div>
@@ -92,8 +94,8 @@
 
   <!-- reset the game -->
 
-
-  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <script src="assets/javascript/app.js">countDown(30, "status");</script>
+ 
 </body>
 
 </html>
